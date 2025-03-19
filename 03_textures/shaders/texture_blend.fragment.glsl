@@ -6,7 +6,7 @@ uniform sampler2D u_mixFactor;
 
 out vec4 out_fragColor;
 
-in vec4 f_normal;
+in vec3 f_normal;
 in vec2 f_texCoord;
 
 void main() 
@@ -16,4 +16,3 @@ void main()
 	float factor = texture(u_mixFactor, f_texCoord).r;
 	out_fragColor = factor*tex1 + (1 - factor)*tex2;
 }
-
