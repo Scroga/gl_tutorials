@@ -32,10 +32,9 @@ inline SimpleScene createTexturedCubeScene(MaterialFactory &aMaterialFactory, Ge
 			RenderStyle::Solid,
 			{
 				{ "u_textureSampler1", TextureInfo("brick_wall/Brick_Wall_012_COLOR.jpg") },
-				{ "u_textureSampler2", TextureInfo("pebbles/Pebbles_003_COLOR.jpg") }
-			}
-			)
-		);
+				{ "u_textureSampler2", TextureInfo("pebbles/Pebbles_003_COLOR.jpg") },
+				{ "u_mixFactor", TextureInfo("Circle-Black.jpg") }
+			}));
 	cube->addMaterial(
 		"wireframe",
 		MaterialParameters(

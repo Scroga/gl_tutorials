@@ -44,7 +44,7 @@ public:
 			const OGLGeometry &geometry = static_cast<const OGLGeometry&>(data.mGeometry);
 
 			fallbackParameters["u_modelMat"] = modelMat;
-			fallbackParameters["u_normalMat"] = modelMat;
+			fallbackParameters["u_normalMat"] = modelMat; // Here might be the problem
 
 			shaderProgram.use();
 			shaderProgram.setMaterialParameters(params.mParameterValues, fallbackParameters);

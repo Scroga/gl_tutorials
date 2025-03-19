@@ -15,8 +15,8 @@
 // to get different variations of the demonstrations.
 
 #include "simpleTriangle.hpp"
-// #include "coloredTriangle.hpp"
-// #include "fractal.hpp"
+//#include "coloredTriangle.hpp"
+//#include "fractal.hpp"
 
 int main() {
 	// Initialize GLFW
